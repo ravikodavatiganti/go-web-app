@@ -25,6 +25,7 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "static/contact.html")
 }
 
+// Main function to start the server and set up routes
 func main() {
 
 	http.HandleFunc("/home", homePage)
